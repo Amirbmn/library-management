@@ -1,0 +1,38 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; background: #f4f5f7; color: #1f2937; }
+.container { max-width: 1100px; margin: 0 auto; padding: 20px; }
+.navbar { display: flex; align-items: center; gap: 16px; padding: 12px 24px; background: #1f2937; color: #fff; }
+.navbar a { color: #e5e7eb; text-decoration: none; }
+.navbar a:hover { color: #fff; }
+.brand { font-weight: 700; font-size: 18px; margin-right: 12px; }
+.spacer { flex: 1; }
+.who { font-size: 14px; color: #9ca3af; }
+.card { background: #fff; border-radius: 8px; padding: 16px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,.08); }
+.form { display: flex; flex-direction: column; gap: 10px; }
+.form h3 { margin: 0 0 4px; }
+input, select { padding: 8px 10px; border: 1px solid #d1d5db; border-radius: 6px; font-size: 14px; }
+.btn { padding: 8px 14px; border: 1px solid #d1d5db; border-radius: 6px; background: #fff; cursor: pointer; font-size: 14px; }
+.btn:disabled { opacity: .5; cursor: not-allowed; }
+.btn.primary { background: #2563eb; border-color: #2563eb; color: #fff; }
+.btn.danger { background: #dc2626; border-color: #dc2626; color: #fff; }
+.btn.small { padding: 4px 10px; font-size: 13px; }
+.row { display: flex; gap: 8px; }
+.filters { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.filters input[type=text], .filters input:not([type]) { flex: 1; min-width: 200px; }
+.check { display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,.08); margin-bottom: 16px; }
+.table th, .table td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e5e7eb; font-size: 14px; }
+.table th { background: #f9fafb; }
+.actions { display: flex; gap: 6px; }
+.badge { padding: 2px 8px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+.badge.ok { background: #dcfce7; color: #166534; }
+.badge.bad { background: #fee2e2; color: #991b1b; }
+.muted { color: #6b7280; }
+.center { text-align: center !important; }
+.pagination { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 12px 0; }
+.message { padding: 10px 14px; border-radius: 6px; margin-bottom: 14px; cursor: pointer; font-size: 14px; }
+.message.error { background: #fee2e2; color: #991b1b; }
+.message.success { background: #dcfce7; color: #166534; }
+.auth-box { max-width: 380px; margin: 40px auto; }
+.admin-grid { display: grid; grid-template-columns: 1fr 300px; gap: 20px; align-items: start; }
+@media (max-width: 800px) { .admin-grid { grid-template-columns: 1fr; } }
